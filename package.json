@@ -10,6 +10,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"dotenv": "^10.0.0",
+		"firebase-cli": "^1.2.0",
 		"firestore-export-import": "^0.17.0"
 	}
 }
