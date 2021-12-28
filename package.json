@@ -1,0 +1,15 @@
+{
+	"name": "6n23rp_backup",
+	"version": "1.0.0",
+	"description": "Backup Database of 6N23RP.COM",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"author": "kanary <kanary159357@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "^10.0.0",
+		"firestore-export-import": "^0.17.0"
+	}
+}
