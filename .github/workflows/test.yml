@@ -35,6 +35,6 @@ jobs:
           CLIENT_X509_CERT_URL: ${{ secrets.CLIENT_X509_CERT_URL }}
  
     - run: ls 
-    - run: cd json &&  zip -r backup.zip ./*.json && hub release create -a backup.zip -m "2021-12-29" 
+    - run: cd json &&  zip -r backup.zip ./*.json && hub release create -a backup.zip -m "2021-12-29" "2021"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
