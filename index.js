@@ -1,8 +1,8 @@
 import { initializeApp, backups } from 'firestore-export-import';
 
 import { writeFile } from 'fs';
-
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 initializeApp({
 	type: process.env.TYPE,
