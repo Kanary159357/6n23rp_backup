@@ -1,10 +1,6 @@
-const {
-	initializeApp,
+import { initializeApp, backups } from 'firestore-export-import';
 
-	backups,
-} = require('firestore-export-import');
-
-const fs = require('fs');
+import { writeFile } from 'fs';
 
 require('dotenv').config();
 
@@ -30,7 +26,7 @@ backups() // Array of collection's name is OPTIONAL
 	.then((collections) => {
 		// You can do whatever you want with collections
 		const sentence = JSON.stringify(collections);
-		fs.writeFile(__dirname + `/json/${cur}.json`, sentence, (err) => {
+		writeFile(__dirname + `/json/${cur}.json`, sentence, (err) => {
 			if (err) console.log(err);
 		});
 	});
