@@ -1,7 +1,8 @@
 import { initializeApp, backups } from 'firestore-export-import';
-
+import { fileURLToPath } from 'url';
 import { writeFile } from 'fs';
 import dotenv from 'dotenv';
+import path from 'path';
 dotenv.config();
 
 initializeApp({
@@ -18,6 +19,8 @@ initializeApp({
 });
 
 const date = new Date();
+const __dirname = path.resolve('./');
+
 const cur =
 	date.getFullYear().toString() +
 	(date.getMonth() + 1).toString() +
