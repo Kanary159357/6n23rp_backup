@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Backup Database of 6N23RP.COM",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
 		"start": "node index.js"
 	},
