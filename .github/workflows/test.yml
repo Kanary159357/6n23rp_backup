@@ -36,6 +36,6 @@ jobs:
  
     - run: ls 
     - run: tag_date=`date '+%Y%m%d'`
-    - run: cd json &&  zip -r backup.zip ./*.json && hub release create -a backup.zip -m "$tag_date" "$tag_date"
+    - run: cd json &&  zip -r backup.zip ./*.json && hub release create -a backup.zip -m "Latest" "$tag_date"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
