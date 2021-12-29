@@ -22,6 +22,6 @@ jobs:
         cache: yarn
     - run: yarn install 
     - run: yarn start
-    - run: ls
+    - run: ls 
     - run: cd json
     - run : ls
